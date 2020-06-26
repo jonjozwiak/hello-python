@@ -50,6 +50,7 @@ Now deploy your new image
 kubectl set image deployment/hello-python hello-python=yourhubusername/hello-python:v2 --record
 
 kubectl get deployments 
+curl http://<URL_from_Service>
 ```
 
 Now rollback to a previous version
@@ -59,6 +60,7 @@ kubectl rollout history deployment/hello-python
 kubectl rollout undo deployment/hello-python --to-revision=1
 
 kubectl get deployment
+curl http://<URL_from_Service>
 ```
 
 ## Cleanup 
