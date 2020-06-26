@@ -61,4 +61,9 @@ kubectl rollout undo deployment/hello-python --to-revision=1
 kubectl get deployment
 ```
 
+## Cleanup 
+
+```
+kubectl delete -f k8s-deployment.yaml
+```
 
